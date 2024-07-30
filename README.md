@@ -6,7 +6,7 @@ Two datasets are employed as our test subjects:
 * QuixBugs
 
 ## Models:
-we choose four recent LLMs: Mistral Large, LLaMA3-70B, LLaMA3-8B, and CodeGemma-7B. The parameter settings and prompt templates for all LLMs reviewed are fixed the same, as follows:
+We choose four recent LLMs: Mistral Large, LLaMA3-70B, LLaMA3-8B, and CodeGemma-7B. The parameter settings and prompt templates for all LLMs reviewed are fixed the same, as follows:
 * temperature=0
 * top_p=0.8
 * max_tokens=1024
