@@ -12,7 +12,6 @@ We choose four recent LLMs: Mistral Large, LLaMA3-70B, LLaMA3-8B, and CodeGemma-
 * max_tokens=1024
 * stream=True
 * Prompt template(An enxample):
-> The following Java code contains a bug. Your task is to fix the bug and provide the corrected code only. Do not include any other text in your response.
 ```python
 prompt = f"""
     The following Java code contains a bug. Your task is to fix the bug and provide the corrected code only. Do not include any other text in your response.
