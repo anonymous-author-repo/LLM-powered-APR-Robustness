@@ -13,8 +13,103 @@ We choose four recent LLMs: Mistral Large, LLaMA3-70B, LLaMA3-8B, and CodeGemma-
 * stream=True
 * Prompt template:
 > The following Java code contains a bug. Your task is to fix the bug and provide the corrected code only. Do not include any other text in your response.
-<br>Buggy code:{java_code}
+<br>Buggy code:
+<br>{java_code}
 <br>Fixed code:
+
+**An Example**
+<br>Buggy code:
+```java
+package java_programs;
+import java.util.*;
+import java.util.ArrayDeque;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author derricklin
+ */
+public class BREADTH_FIRST_SEARCH {
+
+    public static Set<Node> nodesvisited = new HashSet<>();
+
+    public static boolean breadth_first_search(Node startnode, Node goalnode) {
+        Deque<Node> queue = new ArrayDeque<>();
+        queue.addLast(startnode);
+
+        nodesvisited.add(startnode);
+
+        while (true) {
+            Node node = queue.removeFirst();
+
+            if (node == goalnode) {
+                return true;
+            } else {
+                for (Node successor_node : node.getSuccessors()) {
+                    if (!nodesvisited.contains(successor_node)) {
+                        queue.addFirst(successor_node);
+                        nodesvisited.add(successor_node);
+                    }
+                }
+            }
+        }
+        /**
+         * The buggy program always drops into while(true) loop and will not return false
+         * Removed below line to fix compilation error
+         */
+        //return false;
+    }
+
+}
+```
+<br>Fixed code:
+```java
+package java_programs;
+import java.util.*;
+import java.util.ArrayDeque;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author derricklin
+ */
+public class BREADTH_FIRST_SEARCH {
+
+    public static Set<Node> nodesvisited = new HashSet<>();
+
+    public static boolean breadth_first_search(Node startnode, Node goalnode) {
+        Deque<Node> queue = new ArrayDeque<>();
+        queue.addLast(startnode);
+
+        nodesvisited.add(startnode);
+
+        while (!queue.isEmpty()) {
+            Node node = queue.removeFirst();
+
+            if (node == goalnode) {
+                return true;
+            } else {
+                for (Node successor_node : node.getSuccessors()) {
+                    if (!nodesvisited.contains(successor_node)) {
+                        queue.addLast(successor_node);
+                        nodesvisited.add(successor_node);
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
+}
+```
 
 ## Code:
 This repository includes the following code:
