@@ -271,7 +271,8 @@ Navigate to the `AST` directory and execute the following code to implemnt MRs:
   ```
 
 #### After the above steps, we construct the test cases required for this experiment, namely Defect4J<sub>test</sub> and QuixBugs<test>base</sub>. Details of the test cases construction results are as follows:
-![5cbfbb9280338047eafe94f4d09a40b](https://github.com/user-attachments/assets/7de06dbe-3113-4786-8048-7bb2efeed6c8)
+![1722657796928](https://github.com/user-attachments/assets/02f14276-e0dd-4bce-8c3c-142eebfcb613)
+
 
 ### LLM code patch generation after perturbation.
 
