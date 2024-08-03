@@ -227,8 +227,7 @@ This step is designed to test the LLM's repair performance on the original datas
   $ ./ validate_QuixBugs.sh
   ```
 #### Construction of base samples
-After the above process, we obtain 60 base samples from each dataset, where 15 samples for each LLM, namely Defect4J<sub>base</sub> and QuixBugs<sub>base</sub>. Details of the base sample construction results
-are as follows:
+After the above process, we obtain 60 base samples from each dataset, where 15 samples for each LLM, namely Defect4J<sub>base</sub> and QuixBugs<sub>base</sub>. Details of the base sample construction results are as follows:
 ![数据集采样结果](https://github.com/user-attachments/assets/1d25ea25-3347-452b-a844-b967c5dd0890)
 
 ### Implemention of Nine MRs Based on AST.
@@ -270,6 +269,9 @@ Navigate to the `AST` directory and execute the following code to implemnt MRs:
   ```python
   $ python per_QuixBugs.py
   ```
+
+#### After the above steps, we construct the test cases required for this experiment, namely Defect4J<sub>test</sub> and QuixBugs<test>base</sub>. Details of the test cases construction results are as follows:
+![5cbfbb9280338047eafe94f4d09a40b](https://github.com/user-attachments/assets/7de06dbe-3113-4786-8048-7bb2efeed6c8)
 
 ### LLM code patch generation after perturbation.
 
