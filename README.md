@@ -229,7 +229,8 @@ This step is designed to test the LLM's repair performance on the original datas
 #### Construction of base samples
 After the above process, we obtain 60 base samples from each dataset, where 15 samples for each LLM, namely Defect4J<sub>base</sub> and QuixBugs<sub>base</sub>. Details of the base sample construction results are as follows:
 
-![数据集采样结果](https://github.com/user-attachments/assets/40fbcdf3-e7b4-43be-88cd-a30bcff0c2c1)
+
+![4cfba4ca5d810f36b0518e9fb3af943](https://github.com/user-attachments/assets/f2d4e150-20d0-45c3-bc20-879808a1ee93)
 
 ### Implemention of Nine MRs Based on AST.
 Navigate to the `AST` directory and execute the following code to implemnt MRs:
