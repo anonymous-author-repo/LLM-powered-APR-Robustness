@@ -1,4 +1,4 @@
-# Exploring and Lifting the Robustness of LLM-powered Automated Program Repair with Metamorphic Testing
+# On the Robustness of LLM-based Program Repair: Exploring and Lifting with Metamorphic Testing
 
 ## Datasets:
 Two datasets are employed as our test subjects:
