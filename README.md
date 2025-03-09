@@ -464,7 +464,8 @@ Train a CodeT5-based code editing model aiming at improving buggy code readabili
   ```
 
 
-[点击查看 PDF](C:\Users\s'd'd'x'w'l'h\Desktop\Appendix Trail and error.pdf)
+Trail and error:
+[点击查看 PDF](Appendix Trail and error.pdf)
 
 
 ## Contribution
