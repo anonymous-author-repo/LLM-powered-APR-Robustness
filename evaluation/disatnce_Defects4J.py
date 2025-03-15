@@ -2,8 +2,8 @@ import os
 import json
 from typing import List, Dict
 input_file = "single_function_repair1.json"
-disturbed_dir = 'D:\py\pub\disturbed'
-disturbed_p_dir = 'D:\py\pub\disturbed_p'
+disturbed_dir = 'disturbed'
+disturbed_p_dir = 'disturbed_p'
 output_file = 'distances.jsonl'
 def word_level_edit_distance(a: List[str], b: List[str]) -> int:
     max_dis = max(len(a), len(b))
