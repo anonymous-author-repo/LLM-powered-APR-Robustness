@@ -3,9 +3,9 @@ import json
 from typing import List, Dict
 
 
-directory = r"D:\py\pub\clean_LLM_repair\QuixBugs\java_programs"
-disturbed_dir = 'D:\py\pub\clean_LLM_repair\QuixBugs\disturbed_new'
-disturbed_p_dir = 'D:\py\pub\clean_LLM_repair\QuixBugs\disturbed_new'
+directory = r"QuixBugs\java_programs"
+disturbed_dir = 'QuixBugs\disturbed_new'
+disturbed_p_dir = 'QuixBugs\disturbed_new'
 output_file = 'distances1.jsonl'
 
 def word_level_edit_distance(a: List[str], b: List[str]) -> int:
