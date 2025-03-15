@@ -2,7 +2,7 @@ import os
 import json
 
 distances_file = 'distancesl.jsonl'
-fixresultp_dir = 'D:\\py\\pub\\fixresultpl'
+fixresultp_dir = 'fixresultpl'
 
 def load_distances(jsonl_file):
     distances = {}
